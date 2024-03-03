@@ -1,0 +1,120 @@
+/*font family*/
+/* Raleway*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+:root{
+  --color-white:#fff;
+  --color-white2:#f4f4f4;
+  --color-black:#1a1917;
+  --color-grey:#414141;
+  --color-gray2:#222222;
+  --color-orange:#ffad00;
+
+  /*font family*/
+  --font-raleway:"Raleway",sans-serif;
+}
+
+/* Global CSS */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration:none;
+  border: none;
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-size: 1.6rem;
+  font-family:sans-serif;
+}
+
+a{
+  color:#000;
+}
+
+img,
+video,
+picture{
+  display:block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.container{
+  width: 95%;
+  margin-inline: auto;
+}
+
+/*Local css*/
+.wrapper{
+  height: 100dvh;
+  width: 100vw;
+}
+
+.header{
+  height:100vh;
+  background:url("https://images.pexels.com/photos/1089842/pexels-photo-1089842.jpeg?auto=compress&cs=tinysrgb&w=300")no-repeat center;
+  background-size: cover;
+
+}
+
+.header .container{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  gap: 5rem;
+
+}
+
+.header .container .title{
+   font-family: var(--font-raleway);
+   text-align: center;
+   line-height: 1.6;
+   font-size: 4rem;
+   font-weight: 400;
+}
+
+.header .container .title span{
+  font-weight:bold;
+  }
+
+ .header .container .desc{
+    font-size: 2rem;
+    text-align: center;
+ }
+  
+
+.header .container .header_btns{
+  display:flex;
+  gap: 2rem;
+}
+
+.header .container .header_btns .header_btn{
+ width: 26rem;
+ height: 6rem;
+ border-radius: 7rem;
+ font-weight: 600;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.header .container .header_btns .btn_left{
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+.header .container .header_btns .btn_right{
+  border: 2px solid var(--color-grey);
+  
+}
